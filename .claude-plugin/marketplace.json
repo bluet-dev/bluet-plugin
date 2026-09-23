@@ -1,0 +1,12 @@
+{
+  "name": "bluet",
+  "owner": { "name": "Bluet" },
+  "description": "Bluet — product memory for agent sessions.",
+  "plugins": [
+    {
+      "name": "bluet",
+      "source": "./plugin",
+      "description": "Product memory in every Claude Code session: brief, preflight, check, debrief."
+    }
+  ]
+}

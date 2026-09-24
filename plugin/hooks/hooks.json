@@ -3,14 +3,34 @@
     "SessionStart": [
       {
         "hooks": [
-          { "type": "command", "command": "npx -y bluet-mcp@latest hook session-start", "timeout": 30 }
+          {
+            "type": "command",
+            "command": "npx -y bluet-mcp@latest hook session-start",
+            "timeout": 30
+          }
         ]
       }
     ],
     "Stop": [
       {
         "hooks": [
-          { "type": "command", "command": "npx -y bluet-mcp@latest hook stop", "timeout": 30 }
+          {
+            "type": "command",
+            "command": "npx -y bluet-mcp@latest hook stop",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/pre-commit.sh\"",
+            "timeout": 60
+          }
         ]
       }
     ]

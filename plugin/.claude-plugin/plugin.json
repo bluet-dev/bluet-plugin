@@ -1,9 +1,11 @@
 {
   "name": "bluet",
   "description": "Product memory in every session: a brief at start, preflight before edits, a plan check before commits, and a debrief that proposes what the session decided.",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "homepage": "https://bluet.dev",
   "repository": "https://github.com/bluet-dev/bluet",
   "license": "Apache-2.0",
-  "author": { "name": "Bluet" }
+  "author": {
+    "name": "Bluet"
+  }
 }
